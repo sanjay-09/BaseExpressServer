@@ -15,7 +15,7 @@ try{
 })
 
 app.listen(process.env.PORT,()=>{
-    console.log("server is listening on the port 3000");
+    console.log(`server is listening on the port ${process.env.PORT}`);
 })
 }
 catch(err){
