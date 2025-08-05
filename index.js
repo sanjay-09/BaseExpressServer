@@ -1,4 +1,8 @@
 import express from "express";
+
+import dotenv from "dotenv";
+
+dotenv.config();
 const app=express();
 
 
@@ -10,7 +14,7 @@ try{
     })
 })
 
-app.listen(8000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("server is listening on the port 3000");
 })
 }
