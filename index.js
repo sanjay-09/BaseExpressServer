@@ -14,6 +14,13 @@ try{
     })
 })
 
+app.get("/app2",(req,res)=>{
+    console.log("hello:");
+    res.json({
+        msg:"ok"
+    })
+})
+
 app.listen(process.env.PORT,()=>{
     console.log(`server is listening on the port ${process.env.PORT}`);
 })
