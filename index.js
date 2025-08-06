@@ -33,6 +33,12 @@ app.get("/info",(req,res)=>{
     })
 })
 
+app.get("/auth",(req,res)=>{
+    return res.json({
+        msg:"auth"
+    })
+})
+
 app.listen(process.env.PORT,()=>{
     console.log(`server is listening on the port ${process.env.PORT}`);
 })
