@@ -27,6 +27,12 @@ app.get("/app3",create);
 
 app.get("/app4",create2);
 
+app.get("/info",(req,res)=>{
+    return res.json({
+        msg:"info"
+    })
+})
+
 app.get("/auth",(req,res)=>{
     return res.json({
         msg:"auth"
